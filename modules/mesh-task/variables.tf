@@ -63,10 +63,7 @@ variable "task_role" {
     id  = string
     arn = string
   })
-  default = {
-    id  = null
-    arn = null
-  }
+  default = null
 }
 
 variable "execution_role" {
@@ -75,10 +72,7 @@ variable "execution_role" {
     id  = string
     arn = string
   })
-  default = {
-    id  = null
-    arn = null
-  }
+  default = null
 }
 
 variable "additional_task_role_policies" {
