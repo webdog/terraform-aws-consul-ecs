@@ -100,6 +100,8 @@ resource "aws_iam_role" "this_task" {
 
             "ecs:ListTasks",
             "ecs:DescribeTasks",
+            "logs:CreateLogGroup",
+            "logs:PutLogEvents",
           ]
           Resource = "*"
         },
