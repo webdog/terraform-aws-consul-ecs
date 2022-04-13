@@ -1,3 +1,8 @@
+variable "name" {
+  description = "Name of the ACL controller"
+  type        = string
+}
+
 variable "consul_ecs_image" {
   description = "consul-ecs Docker image."
   type        = string
