@@ -9,7 +9,7 @@ resource "aws_secretsmanager_secret_version" "client_token" {
 }
 
 resource "aws_ecs_service" "this" {
-  name            = "consul-acl-controller"
+  name            = var.name ? var.name : "consul-acl-controller"
   cluster         = var.ecs_cluster_arn
   task_definition = aws_ecs_task_definition.this.arn
   desired_count   = 1
